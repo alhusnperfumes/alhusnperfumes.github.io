@@ -1,0 +1,716 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-left: 0%;
+	padding-right: 0%;
+	background-color: #FFF;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background-color: #B72025;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	font-size: 20px;
+}
+h1 {
+	font-weight: 700;
+	margin-bottom: 10px;
+	color: #2180c5;
+}
+#topimage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#maintext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align:justify;
+}
+#formfield {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sendmessage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tel {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 20%;
+	display: block;
+	font-weight: bold;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+#tel_number {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 70%;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 8px;
+	margin-left: 4%;
+	font-weight: bold;
+}
+#three_fields {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#emailtab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#websitetab {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 100%;
+	display: block;
+}
+#fbtab {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 100%;
+	display: block;
+}
+#emailtext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 20%;
+	display: block;
+	font-weight: bold;
+	margin-top: 5px;
+}
+#emailtextbox {
+	clear: none;
+	float: left;
+	margin-left: 4%;
+	width: 70%;
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+#inquire {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+}
+#inquiretxt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-weight: bold;
+}
+#inquiretextbox {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 92%;
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+#login_button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom-width: 8px;
+	border-bottom-style: solid;
+	border-bottom-color: #2180c5;
+	margin-bottom: 5px;
+	text-align: center;
+	margin-top: -5px;
+}
+#enquire_but {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 94%;
+	display: block;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+#emailtext img {
+	height: 20px;
+	width: auto;
+}
+#copyright {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#powered {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#promotion {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+.video {
+	width: 100%;
+	height: 100%;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#topimage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#maintext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#formfield {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#sendmessage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tel {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tel_number {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#three_fields {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#emailtab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#websitetab {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#fbtab {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#emailtext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#emailtextbox {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#inquire {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#inquiretxt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#inquiretextbox {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#login_button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#enquire_but {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+#copyright {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#powered {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#promotion {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+}
+.video {
+	width: 100%;
+	height: 100%;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 800px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFF;
+	margin-top: 10px;
+}
+#topimage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+}
+#maintext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 96%;
+	display: block;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+h1 {
+	font-weight: 700;
+	margin-bottom: 25px;
+	color: #2180c5;
+}
+#formfield {
+	clear: both;
+	float: left;
+	width: 100%;
+	display: block;
+}
+#sendmessage {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #069;
+	text-align: left;
+}
+#tel {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8%;
+	display: block;
+	margin-top: 25px;
+	font-weight: bold;
+}
+#tel_number {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 60%;
+	display: block;
+	margin-top: 20px;
+	font-weight: bold;
+}
+#three_fields {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 15px;
+}
+#emailtab {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#websitetab {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+#fbtab {
+	clear: none;
+	float: left;
+	margin-left: 0%;
+	width: 100%;
+	display: block;
+	margin-top: 10px;
+}
+#emailtext {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8%;
+	display: block;
+	font-weight: bold;
+	margin-top: 5px;
+}
+#emailtextbox {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 60%;
+	display: block;
+	font-weight: bold;
+}
+#inquire {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top: 15px;
+}
+#inquiretxt {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 8%;
+	display: block;
+	font-weight: bold;
+}
+#inquiretextbox {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 40%;
+	display: block;
+	margin-top: 0px;
+}
+#login_button {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: left;
+	border-bottom-width: 8px;
+	border-bottom-style: solid;
+	border-bottom-color: #2180c5;
+}
+#enquire_but {
+	clear: none;
+	float: left;
+	margin-left: 5%;
+	width: 15%;
+	display: block;
+	margin-top: 60px;
+}
+#emailtext img {
+	height: 20px;
+	width: auto;
+}
+#copyright {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#powered {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 50%;
+	display: block;
+}
+#promotion {
+	clear: none;
+	float: right;
+	margin-left: 2.0408%;
+	display: block;
+	text-align: center;
+}
+#promotion span {
+	font-weight: bolder;
+	color: #15517D;
+	font-size: 14px;
+}
+.video {
+	width: 560;
+	height: 315px;
+}
+}
+
+.login1 {
+	background-position: 5px 5px;
+	border: 0px solid #DDDDDD;
+	 
+	height: 28px;
+	line-height: 28px;
+	outline: 0 none;
+	transition: all 0.4s ease 0s;
+	padding-top: 10;
+	padding-right: 7px;
+	padding-bottom: 10;
+	padding-left: 10px;
+	margin-left: 5px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+.login1:focus {
+	-moz-box-shadow: 0px 0px 8px #d2d2d2;
+	-webkit-box-shadow: 0px 0px 8px #d2d2d2;
+	box-shadow: 0px 0px 8px #d2d2d2;
+	border: 1px solid #B4B4B4;
+	}
+	
+	
+.login {
+	background-position: 5px 5px;
+	border: 1px solid #DDDDDD;
+	box-shadow: 1px 1px 2px #F5F5F5;
+	height: 28px;
+	line-height: 28px;
+	outline: 0 none;
+	transition: all 0.4s ease 0s;
+	padding-top: 10;
+	padding-right: 7px;
+	padding-bottom: 10;
+	padding-left: 10px;
+	margin-left: 0px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+}
+.login:focus {
+	-moz-box-shadow: 0px 0px 8px #d2d2d2;
+	-webkit-box-shadow: 0px 0px 8px #d2d2d2;
+	box-shadow: 0px 0px 8px #d2d2d2;
+	border: 1px solid #B4B4B4;
+	}
+.btn-primary {
+    padding: 12px 55px;
+    display: inline-block;
+   
+    background-color: #00aeef;
+	    box-shadow: 0px 0px 0px 1px #1b99ce;
+    border-color: #1b99ce;
+}
+.btn-primary {
+    border: 0;
+    color: #fff;
+    background-color: #267cc1;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 12px 42px;
+    position: relative;
+     letter-spacing: 0;
+    position: relative;
+    box-shadow: none;
+    z-index: 1;
+	border-radius: 5px 5px 5px 5px;
+}
+#emailtextbox a {
+	color: #2578BA;
+	text-decoration: none;
+}
+#emailtextbox a:hover {
+	color: #333333;
+	text-decoration: underline;
+}
+#promotion a {
+	color: #2578BA;
+	text-decoration: none;
+	font-weight: bold;
+}
+#promotion a:hover {
+	color: #333333;
+	text-decoration: underline;
+}
